@@ -14,6 +14,10 @@ import android.widget.TextView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import uk.ac.tees.b1196119.vejicious.R;
+import uk.ac.tees.b1196119.vejicious.Adaptor.CartListAdapter;
+import uk.ac.tees.b1196119.vejicious.Adaptor.CategoryAdaptor;
+import uk.ac.tees.b1196119.vejicious.Helper.ManagementCart;
+import uk.ac.tees.b1196119.vejicious.Interface.ChangeNumberItemsListener;
 
 public class CartListActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter;

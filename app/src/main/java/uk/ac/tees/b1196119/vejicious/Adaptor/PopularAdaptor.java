@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class PopluarAdaptor extends RecyclerView.Adapter<PopluarAdaptor.ViewHolder> {
+public class PopularAdaptor extends RecyclerView.Adapter<PopluarAdaptor.ViewHolder> {
     ArrayList<com.example.project.Domain.FoodDomain> popularFood;
 
     public PopluarAdaptor(ArrayList<com.example.project.Domain.FoodDomain> popularFood) {
@@ -71,4 +71,6 @@ public class PopluarAdaptor extends RecyclerView.Adapter<PopluarAdaptor.ViewHold
 
         }
     }
+}
+
 }

@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class CatregoryAdaptor extends RecyclerView.Adapter<CatregoryAdaptor.ViewHolder> {
+public class CategoryAdaptor extends RecyclerView.Adapter<CatregoryAdaptor.ViewHolder> {
     ArrayList<com.example.project.Domain.CategoryDomain> categoryDomains;
 
     public CatregoryAdaptor(ArrayList<com.example.project.Domain.CategoryDomain> categoryDomains) {
@@ -85,4 +85,6 @@ public class CatregoryAdaptor extends RecyclerView.Adapter<CatregoryAdaptor.View
 
         }
     }
+}
+
 }
