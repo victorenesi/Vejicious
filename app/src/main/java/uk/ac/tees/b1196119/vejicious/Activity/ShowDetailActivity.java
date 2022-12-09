@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import uk.ac.tees.b1196119.vejicious.Domain.FoodDomain;
+import uk.ac.tees.b1196119.vejicious.Helper.ManagementCart;
 import uk.ac.tees.b1196119.vejicious.R;
 
 public class ShowDetailActivity extends AppCompatActivity {

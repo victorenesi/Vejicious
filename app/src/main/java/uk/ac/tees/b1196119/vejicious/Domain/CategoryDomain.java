@@ -1,4 +1,4 @@
-package com.example.project.Domain;
+package uk.ac.tees.b1196119.vejicious.Domain;
 
 public class CategoryDomain {
     private String title;

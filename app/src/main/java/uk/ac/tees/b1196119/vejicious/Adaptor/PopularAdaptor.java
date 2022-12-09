@@ -12,10 +12,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class PopularAdaptor extends RecyclerView.Adapter<PopluarAdaptor.ViewHolder> {
-    ArrayList<com.example.project.Domain.FoodDomain> popularFood;
+import com.bumptech.glide.Glide;
+import uk.ac.tees.b1196119.vejicious.Activity.ShowDetailActivity;
+import uk.ac.tees.b1196119.vejicious.Domain.FoodDomain;
+import uk.ac.tees.b1196119.vejicious.R;
 
-    public PopluarAdaptor(ArrayList<com.example.project.Domain.FoodDomain> popularFood) {
+public class PopularAdaptor extends RecyclerView.Adapter<PopularAdaptor.ViewHolder> {
+    ArrayList<FoodDomain> popularFood;
+
+    public PopularAdaptor(ArrayList<FoodDomain> popularFood) {
         this.popularFood = popularFood;
     }
 

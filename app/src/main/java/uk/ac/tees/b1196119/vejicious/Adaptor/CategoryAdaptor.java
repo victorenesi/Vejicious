@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class CategoryAdaptor extends RecyclerView.Adapter<CatregoryAdaptor.ViewHolder> {
-    ArrayList<com.example.project.Domain.CategoryDomain> categoryDomains;
+public class CategoryAdaptor extends RecyclerView.Adapter<CategoryAdaptor.ViewHolder> {
+    ArrayList<uk.ac.tees.b1196119.vejicious.Domain.CategoryDomain> categoryDomains;
 
     public CatregoryAdaptor(ArrayList<com.example.project.Domain.CategoryDomain> categoryDomains) {
         this.categoryDomains = categoryDomains;
