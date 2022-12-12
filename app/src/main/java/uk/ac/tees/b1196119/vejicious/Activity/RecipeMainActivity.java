@@ -11,8 +11,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,6 +77,33 @@ public class RecipeMainActivity extends AppCompatActivity {
         manager = new RequestManager(this);
 //        manager.getRandomRecipes(randomRecipeResponseListener);
 //        dialog.show();
+    }
+
+    private void BottomNavigation() {
+        FloatingActionButton floatingActionButton = findViewById(R.id.cartBtn);
+        LinearLayout supportBtn = findViewById(R.id.Support_Btn);
+        LinearLayout homeBtn = findViewById(R.id.home_Btn);
+
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RecipeMainActivity.this, MainActivity.class));
+            }
+        });
+
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RecipeMainActivity.this, CartListActivity.class));
+            }
+        });
+
+        supportBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RecipeMainActivity.this, RecipeMainActivity.class));
+            }
+        });
     }
 
     private final RandomRecipeResponseListener randomRecipeResponseListener =

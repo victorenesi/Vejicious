@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private void BottomNavigation() {
         FloatingActionButton floatingActionButton = findViewById(R.id.cartBtn);
         LinearLayout homeBtn = findViewById(R.id.home_Btn);
+        LinearLayout supportBtn = findViewById(R.id.Support_Btn);
+
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, MainActivity.class));
+            }
+        });
+
+        supportBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, RecipeMainActivity.class));
             }
         });
     }

@@ -7,10 +7,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.squareup.picasso.Picasso;
 
 import uk.ac.tees.b1196119.vejicious.Adaptor.IngredientsAdapter;
@@ -51,6 +54,33 @@ public class RecipeDetailsActivity extends AppCompatActivity {
         dialog.setTitle("Loading Details....");
         dialog.show();
 
+    }
+
+    private void BottomNavigation() {
+        FloatingActionButton floatingActionButton = findViewById(R.id.cartBtn);
+        LinearLayout supportBtn = findViewById(R.id.Support_Btn);
+        LinearLayout homeBtn = findViewById(R.id.home_Btn);
+
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RecipeDetailsActivity.this, MainActivity.class));
+            }
+        });
+
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RecipeDetailsActivity.this, CartListActivity.class));
+            }
+        });
+
+        supportBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RecipeDetailsActivity.this, RecipeMainActivity.class));
+            }
+        });
     }
 
     private void findViews() {
