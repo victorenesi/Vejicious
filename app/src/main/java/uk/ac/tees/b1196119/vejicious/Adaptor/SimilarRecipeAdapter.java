@@ -12,11 +12,13 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
-import com.tareq.android.food.Listners.RecipeClickListner;
-import com.tareq.android.food.Models.SimilarRecipeResponse;
-import com.tareq.android.food.R;
+import uk.ac.tees.b1196119.vejicious.Interface.RecipeClickListner;
+import uk.ac.tees.b1196119.vejicious.Models.SimilarRecipeResponse;
+import uk.ac.tees.b1196119.vejicious.R;
 
 import java.util.List;
+
+import uk.ac.tees.b1196119.vejicious.R;
 
 public class SimilarRecipeAdapter extends RecyclerView.Adapter< SimilarRecipeViewHolder>{
 
@@ -33,7 +35,7 @@ public class SimilarRecipeAdapter extends RecyclerView.Adapter< SimilarRecipeVie
     @NonNull
     @Override
     public SimilarRecipeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new SimilarRecipeViewHolder(LayoutInflater.from(context).inflate(R.layout.list_similar_recopie,parent,false));
+        return new SimilarRecipeViewHolder(LayoutInflater.from(context).inflate(R.layout.list_similar_recipe,parent,false));
     }
 
     @Override

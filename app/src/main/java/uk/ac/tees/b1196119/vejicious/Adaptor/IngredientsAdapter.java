@@ -11,8 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
-import com.tareq.android.food.Models.ExtendedIngredient;
-import com.tareq.android.food.R;
+import uk.ac.tees.b1196119.vejicious.Models.ExtendedIngredient;
+import uk.ac.tees.b1196119.vejicious.R;
 
 import java.util.List;
 
