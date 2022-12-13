@@ -45,6 +45,7 @@ public class RecipeDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recipe_details);
 
         findViews();
+        BottomNavigation();
 
         id =Integer.parseInt(getIntent().getStringExtra("id")) ;
         manager = new RequestManager(this);
@@ -58,7 +59,7 @@ public class RecipeDetailsActivity extends AppCompatActivity {
 
     private void BottomNavigation() {
         FloatingActionButton floatingActionButton = findViewById(R.id.cartBtn);
-        LinearLayout supportBtn = findViewById(R.id.Support_Btn);
+        LinearLayout recipeBtn = findViewById(R.id.Recipe_Btn);
         LinearLayout homeBtn = findViewById(R.id.home_Btn);
 
         homeBtn.setOnClickListener(new View.OnClickListener() {
@@ -75,7 +76,7 @@ public class RecipeDetailsActivity extends AppCompatActivity {
             }
         });
 
-        supportBtn.setOnClickListener(new View.OnClickListener() {
+        recipeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(RecipeDetailsActivity.this, RecipeMainActivity.class));

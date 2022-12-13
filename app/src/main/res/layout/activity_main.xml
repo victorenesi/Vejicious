@@ -304,7 +304,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/Support_Btn"
+                    android:id="@+id/Recipe_Btn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
@@ -321,7 +321,7 @@
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Support"
+                        android:text="Recipes"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />

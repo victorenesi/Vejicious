@@ -74,7 +74,7 @@
                     android:id="@+id/totalFeeTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$0"
+                    android:text="£0"
                     android:textColor="#373b54"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -104,7 +104,7 @@
                     android:id="@+id/deliveryTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$0"
+                    android:text="£0"
                     android:textColor="#373b54"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -134,7 +134,7 @@
                     android:id="@+id/taxTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$0"
+                    android:text="£0"
                     android:textColor="#373b54"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -164,7 +164,7 @@
                     android:id="@+id/totalTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$0"
+                    android:text="£0"
                     android:textColor="#373b54"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -186,6 +186,17 @@
         </LinearLayout>
     </ScrollView>
 
+<!--    android:id="@+id/emptyTxt"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Your Cart is Empty"-->
+<!--    android:textSize="16sp"-->
+<!--    android:textStyle="bold"-->
+<!--    android:visibility="gone"-->
+<!--    app:layout_constraintBottom_toBottomOf="@id/scrollView3"-->
+<!--    app:layout_constraintEnd_toEndOf="@id/scrollView3"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toTopOf="@id/scrollView3"-->
     <TextView
         android:id="@+id/emptyTxt"
         android:layout_width="wrap_content"
@@ -193,13 +204,14 @@
         android:text="Your Cart is Empty"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@id/scrollView3"
-        app:layout_constraintEnd_toEndOf="@id/scrollView3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/scrollView3" />
+        app:layout_constraintTop_toTopOf="@id/scrollView3"
+        tools:visibility="gone" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -294,7 +306,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/Support_Btn"
+                    android:id="@+id/Recipe_Btn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
@@ -311,7 +323,7 @@
                         android:id="@+id/textView29"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Support"
+                        android:text="Recipes"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />

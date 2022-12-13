@@ -30,10 +30,11 @@
                 android:id="@+id/priceTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="$"
+                android:text="£"
                 android:textAlignment="center"
                 android:textColor="#22aa00"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/picfood"

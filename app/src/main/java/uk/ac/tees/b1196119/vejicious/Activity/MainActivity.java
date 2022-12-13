@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private void BottomNavigation() {
         FloatingActionButton floatingActionButton = findViewById(R.id.cartBtn);
         LinearLayout homeBtn = findViewById(R.id.home_Btn);
-        LinearLayout supportBtn = findViewById(R.id.Support_Btn);
+        LinearLayout recipeBtn = findViewById(R.id.Recipe_Btn);
 
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        supportBtn.setOnClickListener(new View.OnClickListener() {
+        recipeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, RecipeMainActivity.class));
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         category.add((new CategoryDomain("Burger", "cat_2")));
         category.add((new CategoryDomain("Hotdog", "cat_3")));
         category.add((new CategoryDomain("Drink", "cat_4")));
-        category.add((new CategoryDomain("Dount", "cat_5")));
+        category.add((new CategoryDomain("Donut", "cat_5")));
 
         adapter = new CategoryAdaptor(category);
         recyclerViewCategoryList.setAdapter(adapter);
@@ -83,9 +83,9 @@ public class MainActivity extends AppCompatActivity {
         RecyclerViewPopularList.setLayoutManager(linearLayoutManager);
 
         ArrayList<FoodDomain> foodList = new ArrayList<>();
-        foodList.add(new FoodDomain("Pepperoni pizza", "pop_1", "slices pepperoni,mozzarella cheese,fresh oregano,ground black pepper,pizza sauce", 9.76));
-        foodList.add(new FoodDomain("Cheese Burger", "pop_2", "beef, Gouda cheese, Special Sauce,Lettuce,tomato", 8.79));
-        foodList.add(new FoodDomain("Vegetable pizza", "pop_3", "olive oil,Vegetable oil,pitted kalamata,cherry tomatoes,fresh oregano,basil", 8.5));
+        foodList.add(new FoodDomain("Pepperoni pizza", "pop_1", "slices pepperoni, mozzarella cheese, fresh oregano, ground black pepper, pizza sauce", 14.70));
+        foodList.add(new FoodDomain("Cheese Burger", "pop_2", "burger buns, mushrooms, cheddar, sliced carrots, soy Sauce, lettuce, tomato, kidney beans", 7.99));
+        foodList.add(new FoodDomain("Vegetable pizza", "pop_3", "olive oil, vegetable oil, pitted kalamata, cherry tomatoes, fresh oregano, basil", 12.50));
 
         adapter2 = new PopularAdaptor(foodList);
         RecyclerViewPopularList.setAdapter(adapter2);

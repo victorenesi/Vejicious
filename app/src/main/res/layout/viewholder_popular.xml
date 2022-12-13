@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="3dp"
-        android:text="$"
+        android:text="£"
         android:textColor="#22aa00"
         app:layout_constraintBottom_toBottomOf="@+id/fee"
         app:layout_constraintEnd_toStartOf="@+id/fee"
